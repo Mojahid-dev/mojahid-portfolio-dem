@@ -80,7 +80,7 @@ export default function Portfolio({ initialHtml }: { initialHtml: string }) {
       const data = await r.json();
       if (!r.ok) throw new Error(data.error || "Could not load portfolio content.");
       return data;
-    });
+    }).catch((error) => { console.error("Portfolio content did not load:", error); return null; });
     const w = window as any;
     if (!w.__portfolioScriptPromise) {
       w.__portfolioScriptPromise = new Promise<void>((resolve, reject) => {
@@ -92,9 +92,12 @@ export default function Portfolio({ initialHtml }: { initialHtml: string }) {
       });
     }
     const scriptPromise: Promise<void> = w.__portfolioScriptPromise;
+    scriptPromise.then(() => {
+      if (live && typeof w.initPreloader === "function") w.initPreloader();
+    }).catch((error) => console.error(error));
     Promise.all([dataPromise, scriptPromise]).then(([data]) => {
       if (!live) return;
-      applyContent(data);
+      if (data) applyContent(data);
       if (typeof w.initPortfolio === "function") w.initPortfolio();
     }).catch((error) => console.error(error));
     return () => {

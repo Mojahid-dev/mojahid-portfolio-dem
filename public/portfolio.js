@@ -64,10 +64,12 @@ function initCursor() {
 
 // ── PRELOADER ──
 function initPreloader() {
+    if (window.__preloaderStarted) return;
     const preloader = document.getElementById('preloader');
     const preBar = document.getElementById('pre-bar');
 
     if (!preBar) return;
+    window.__preloaderStarted = true;
 
     let progress = 0;
     const increment = () => {
@@ -78,7 +80,7 @@ function initPreloader() {
 
     const progressInterval = setInterval(increment, 500);
 
-    window.addEventListener('load', () => {
+    const finishPreloader = () => {
         clearInterval(progressInterval);
         preBar.style.width = '100%';
         setTimeout(() => {
@@ -86,13 +88,15 @@ function initPreloader() {
                 preloader.classList.add('done');
             }
         }, 600);
-    });
+    };
+    if (document.readyState === 'complete') finishPreloader();
+    else window.addEventListener('load', finishPreloader, { once: true });
 
     // Fallback: complete preloader after 4 seconds if page hasn't fully loaded
     setTimeout(() => {
         clearInterval(progressInterval);
         preBar.style.width = '100%';
-        if (!preloader.classList.contains('done')) {
+        if (preloader && !preloader.classList.contains('done')) {
             preloader.classList.add('done');
         }
     }, 4000);
