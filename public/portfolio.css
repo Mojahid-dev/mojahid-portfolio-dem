@@ -907,6 +907,7 @@
             content: '';
             position: absolute;
             inset: 0;
+            pointer-events: none;
             background: linear-gradient(135deg, transparent 0%, rgba(255, 107, 0, 0.04) 100%);
             opacity: 0;
             transition: opacity 0.3s;
@@ -926,6 +927,7 @@
         .project-card::after {
             content: '';
             position: absolute;
+            pointer-events: none;
             top: 0;
             left: -100%;
             width: 60%;
@@ -976,6 +978,8 @@
 
         .card-body {
             padding: 32px;
+            position: relative;
+            z-index: 1;
         }
 
         .card-num {
@@ -1039,6 +1043,9 @@
             align-items: center;
             gap: 8px;
             transition: gap 0.3s;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
         }
 
         .card-link:hover {
