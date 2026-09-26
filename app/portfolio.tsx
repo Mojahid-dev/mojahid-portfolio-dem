@@ -54,13 +54,9 @@ function applyContent(data: Content) {
     projects.innerHTML = data.projects
       .map(
         (p: any, i: number) =>
-          `<div class="project-card reveal ${i ? `reveal-delay-${Math.min(i, 3)}` : ""}" data-tilt><div class="card-banner ${i === 1 ? "b2" : i === 2 ? "b3" : ""}"></div><div class="card-body"><div class="card-num">${String(i + 1).padStart(2, "0")} / PROJECT</div><div class="card-title">${esc(p.title)}</div><p class="card-desc">${esc(p.description)}</p><div class="card-tags">${p.tags.map((tag: string) => `<span class="tag">${esc(tag)}</span>`).join("")}</div><a href="${esc(p.url)}" class="card-link" target="_blank" rel="noreferrer">${esc(p.linkLabel)} →</a></div></div>`,
+          `<div class="project-card reveal ${i ? `reveal-delay-${Math.min(i, 3)}` : ""}" data-tilt><div class="card-banner ${i === 1 ? "b2" : i === 2 ? "b3" : ""} ${p.banner ? "has-banner" : ""}">${p.banner ? `<img class="card-banner-image" src="${esc(p.banner)}" alt="${esc(p.title)} banner" loading="lazy">` : ""}</div><div class="card-body"><div class="card-num">${String(i + 1).padStart(2, "0")} / PROJECT</div><div class="card-title">${esc(p.title)}</div><p class="card-desc">${esc(p.description)}</p><div class="card-tags">${p.tags.map((tag: string) => `<span class="tag">${esc(tag)}</span>`).join("")}</div><a href="${esc(p.url || "#")}" class="card-link" target="_blank" rel="noopener noreferrer">${esc(p.linkLabel)} →</a></div></div>`,
       )
       .join("");
-  projects?.querySelectorAll<HTMLElement>(".card-banner").forEach((banner, i) => {
-    const src = data.projects[i]?.banner;
-    if (src) { banner.classList.add("has-banner"); banner.style.backgroundImage = `url("${String(src).replace(/["\\\\]/g, "")}")`; }
-  });
   const process = document.querySelector(".process-steps");
   if (process) process.innerHTML = `<div class="process-line"></div>${data.process.map((p:any,i:number)=>`<div class="step reveal ${i?`reveal-delay-${Math.min(i,3)}`:""}"><div class="step-num">${String(i+1).padStart(2,"0")}</div><div class="step-dot"></div><div class="step-title">${esc(p.title)}</div><p class="step-desc">${esc(p.description)}</p></div>`).join("")}`;
   const statsGrid = document.querySelector(".stats-grid");
