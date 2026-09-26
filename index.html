@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Mojahid — Full-Stack Developer & AI Builder</title>
+    <meta name="description" content="Md Mojahid — CSE Student, Full-Stack Developer, AI Builder from India">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- FAVICONS & PWA -->
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <meta name="theme-color" content="#FF6B00">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="pre-logo">M<span>.</span>DEV</div>
+        <div class="pre-bar-wrap">
+            <div class="pre-bar" id="pre-bar"></div>
+        </div>
+    </div>
+
+    <!-- CURSOR -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div id="spotlight"></div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">Email copied ✓</div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" class="mob-link">About</a>
+        <a href="#skills" class="mob-link">Skills</a>
+        <a href="#projects" class="mob-link">Projects</a>
+        <a href="#contact" class="mob-link">Contact</a>
+    </div>
+
+    <!-- NAV -->
+    <nav id="nav">
+        <a href="#hero" class="nav-logo">MO<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-hire">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-grid-bg"></div>
+        <canvas id="canvas-bg"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Available for projects</span>
+            </div>
+            <div class="hero-name" id="hero-name"></div>
+            <div class="hero-sub"><span id="typewriter"></span><span class="cursor-blink">|</span></div>
+            <p class="hero-desc">
+                CSE student, 4th semester — building AI-powered products that actually ship.
+                From LMS platforms to automation systems, I turn ideas into real software.
+            </p>
+            <div class="hero-ctas">
+                <a href="#projects" class="btn-primary"><span>View My Work →</span></a>
+                <a href="mailto:mojahid.dev.sihf@gmail.com" class="btn-outline"><span>Get In Touch</span></a>
+            </div>
+        </div>
+        <div class="marquee-wrap">
+            <div class="marquee-track">
+                <div class="marquee-item">REACT <span>•</span></div>
+                <div class="marquee-item">NEXT.JS <span>•</span></div>
+                <div class="marquee-item">SUPABASE <span>•</span></div>
+                <div class="marquee-item">CLAUDE API <span>•</span></div>
+                <div class="marquee-item">TAILWIND CSS <span>•</span></div>
+                <div class="marquee-item">VERCEL <span>•</span></div>
+                <div class="marquee-item">AI BUILDER <span>•</span></div>
+                <div class="marquee-item">FULL STACK <span>•</span></div>
+                <div class="marquee-item">N8N AUTOMATION <span>•</span></div>
+                <div class="marquee-item">REACT <span>•</span></div>
+                <div class="marquee-item">NEXT.JS <span>•</span></div>
+                <div class="marquee-item">SUPABASE <span>•</span></div>
+                <div class="marquee-item">CLAUDE API <span>•</span></div>
+                <div class="marquee-item">TAILWIND CSS <span>•</span></div>
+                <div class="marquee-item">VERCEL <span>•</span></div>
+                <div class="marquee-item">AI BUILDER <span>•</span></div>
+                <div class="marquee-item">FULL STACK <span>•</span></div>
+                <div class="marquee-item">N8N AUTOMATION <span>•</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-visual reveal">
+            <div class="about-shape">
+                <div class="shape-geo"></div>
+                <div class="shape-geo2"></div>
+                <div class="shape-geo3"></div>
+                <div class="initials">MM</div>
+            </div>
+            <div class="about-label">FULL STACK DEVELOPER</div>
+        </div>
+        <div class="about-text">
+            <h2 class="reveal">I Build Things<br>That <em>Matter.</em></h2>
+            <p class="reveal reveal-delay-1">
+                I'm Md Mojahid — a CSE student from India with a dangerous mix of curiosity and code.
+                While most students just study, I build: AI-powered platforms, automation systems,
+                YouTube channels, and SaaS products. Currently obsessed with making AI accessible to everyone.
+            </p>
+            <div class="stats-grid">
+                <div class="stat-item reveal reveal-delay-1">
+                    <span class="stat-num" data-target="4">0</span>
+                    <span class="stat-label">Semesters CSE</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-2">
+                    <span class="stat-num" data-target="10">0</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-item reveal reveal-delay-3">
+                    <span class="stat-num" data-target="3">0</span>
+                    <span class="stat-label">Tech Stacks</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-num">∞</span>
+                    <span class="stat-label">Curiosity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-header">
+            <div class="section-title" id="skills-title">
+                <span class="line-wrap"><span class="line-inner">MY</span></span>
+                <span class="line-wrap"><span class="line-inner">SKILLS</span></span>
+            </div>
+            <div class="section-sub reveal">What I work with</div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-group reveal">
+                <h3>Frontend</h3>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">React / Next.js</span><span
+                            class="skill-pct">85%</span></div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">HTML & CSS</span><span class="skill-pct">92%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">Tailwind CSS</span><span
+                            class="skill-pct">88%</span></div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">80%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-group reveal reveal-delay-1">
+                <h3>Backend & DB</h3>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">Supabase</span><span class="skill-pct">78%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="78"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">72%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="72"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">REST APIs</span><span class="skill-pct">75%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">C Programming</span><span
+                            class="skill-pct">65%</span></div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="65"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-group reveal reveal-delay-2">
+                <h3>AI & Automation</h3>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">Claude API</span><span class="skill-pct">82%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="82"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">n8n Automation</span><span
+                            class="skill-pct">76%</span></div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="76"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">Prompt Engineering</span><span
+                            class="skill-pct">90%</span></div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-group reveal reveal-delay-3">
+                <h3>Tools & Design</h3>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">UI/UX Design</span><span
+                            class="skill-pct">80%</span></div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">Git & GitHub</span><span
+                            class="skill-pct">78%</span></div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="78"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-top"><span class="skill-name">Vercel / Deploy</span><span
+                            class="skill-pct">85%</span></div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section-header">
+            <div class="section-title" id="projects-title">
+                <span class="line-wrap"><span class="line-inner">WHAT I'VE</span></span>
+                <span class="line-wrap"><span class="line-inner">BUILT</span></span>
+            </div>
+            <div class="section-sub reveal">Selected work</div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal" data-tilt>
+                <div class="card-banner"></div>
+                <div class="card-body">
+                    <div class="card-num">01 / PROJECT</div>
+                    <div class="card-title">AI-Powered LMS</div>
+                    <p class="card-desc">Full learning management system with AI mentor, course enrollment, video
+                        access, student dashboards, and teacher admin panel. Built to scale.</p>
+                    <div class="card-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Supabase</span>
+                        <span class="tag">Claude API</span>
+                        <span class="tag">Clerk</span>
+                        <span class="tag">Stripe</span>
+                        <span class="tag">Vercel</span>
+                    </div>
+                    <a href="https://github.com/Mojahid-dev" class="card-link" target="_blank">View on GitHub →</a>
+                </div>
+            </div>
+            <div class="project-card reveal reveal-delay-1" data-tilt>
+                <div class="card-banner b2"></div>
+                <div class="card-body">
+                    <div class="card-num">02 / PROJECT</div>
+                    <div class="card-title">Nexora Channel</div>
+                    <p class="card-desc">Faceless YouTube channel for Indian audiences — AI, tech, psychology & human
+                        behavior. Retention-engineered Hinglish scripts with full production bibles.</p>
+                    <div class="card-tags">
+                        <span class="tag">Content Strategy</span>
+                        <span class="tag">AI Scripts</span>
+                        <span class="tag">Hinglish</span>
+                        <span class="tag">SEO</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                    <a href="https://github.com/Mojahid-dev" class="card-link" target="_blank">View Channel →</a>
+                </div>
+            </div>
+            <div class="project-card reveal reveal-delay-2" data-tilt>
+                <div class="card-banner b3"></div>
+                <div class="card-body">
+                    <div class="card-num">03 / PROJECT</div>
+                    <div class="card-title">This Portfolio</div>
+                    <p class="card-desc">Bold black-orange portfolio site. Custom cursor, particle systems,
+                        scroll-reveal animations, glitch effects, and a character that makes recruiters stop scrolling.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Vanilla JS</span>
+                        <span class="tag">Canvas API</span>
+                        <span class="tag">Animations</span>
+                    </div>
+                    <a href="https://github.com/Mojahid-dev" class="card-link" target="_blank">Source Code →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+        <div class="section-header">
+            <div class="section-title" id="process-title">
+                <span class="line-wrap"><span class="line-inner">HOW I</span></span>
+                <span class="line-wrap"><span class="line-inner">WORK</span></span>
+            </div>
+        </div>
+        <div class="process-steps">
+            <div class="process-line"></div>
+            <div class="step reveal">
+                <div class="step-num">01</div>
+                <div class="step-dot"></div>
+                <div class="step-title">Understand</div>
+                <p class="step-desc">Deep dive into the problem. What are we actually building and why does it matter?
+                </p>
+            </div>
+            <div class="step reveal reveal-delay-1">
+                <div class="step-num">02</div>
+                <div class="step-dot"></div>
+                <div class="step-title">Design</div>
+                <p class="step-desc">Wireframe, prototype, think through UX. No code until the plan is solid.</p>
+            </div>
+            <div class="step reveal reveal-delay-2">
+                <div class="step-num">03</div>
+                <div class="step-dot"></div>
+                <div class="step-title">Build</div>
+                <p class="step-desc">Ship fast, iterate faster. Working software over perfect software — always.</p>
+            </div>
+            <div class="step reveal reveal-delay-3">
+                <div class="step-num">04</div>
+                <div class="step-dot"></div>
+                <div class="step-title">Deploy</div>
+                <p class="step-desc">Production-ready. Monitored. Live. Not just a localhost demo that never ships.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-bg-text">CONTACT</div>
+        <div class="contact-content">
+            <p class="contact-label reveal">Let's collaborate</p>
+            <div class="contact-big reveal">
+                LET'S BUILD<br>SOMETHING <em>REAL.</em>
+            </div>
+            <div class="email-block reveal" id="email-copy" title="Click to copy">
+                <span class="email-icon">✉</span>
+                <span class="email-text">mojahid.dev.sihf@gmail.com</span>
+            </div>
+            <div class="social-links reveal reveal-delay-1">
+                <a href="https://github.com/Mojahid-dev" target="_blank" class="social-link">↗ GitHub</a>
+                <a href="mailto:mojahid.dev.sihf@gmail.com" class="social-link">→ Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="reveal">
+        <div class="footer-left">© 2025 Md Mojahid — Crafted with <span class="footer-heart">♥</span> & obsession</div>
+        <div class="footer-right">Built in <span>India</span> 🇮🇳</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

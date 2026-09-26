@@ -1,0 +1,169 @@
+{
+  "name": "Md Mojahid",
+  "role": "Full-Stack Developer & AI Builder",
+  "available": "Available for projects",
+  "heroDescription": "CSE student, 4th semester — building AI-powered products that actually ship. From LMS platforms to automation systems, I turn ideas into real software.",
+  "aboutDescription": "I'm Md Mojahid — a CSE student from India with a dangerous mix of curiosity and code. While most students just study, I build: AI-powered platforms, automation systems, YouTube channels, and SaaS products. Currently obsessed with making AI accessible to everyone.",
+  "email": "mojahid.dev.sihf@gmail.com",
+  "github": "https://github.com/Mojahid-dev",
+  "skills": [
+    {
+      "group": "Frontend",
+      "name": "React / Next.js",
+      "level": 85
+    },
+    {
+      "group": "Frontend",
+      "name": "HTML & CSS",
+      "level": 92
+    },
+    {
+      "group": "Frontend",
+      "name": "Tailwind CSS",
+      "level": 88
+    },
+    {
+      "group": "Frontend",
+      "name": "JavaScript",
+      "level": 80
+    },
+    {
+      "group": "Backend & DB",
+      "name": "Supabase",
+      "level": 78
+    },
+    {
+      "group": "Backend & DB",
+      "name": "Python",
+      "level": 72
+    },
+    {
+      "group": "Backend & DB",
+      "name": "REST APIs",
+      "level": 75
+    },
+    {
+      "group": "Backend & DB",
+      "name": "C Programming",
+      "level": 65
+    },
+    {
+      "group": "AI & Automation",
+      "name": "Claude API",
+      "level": 82
+    },
+    {
+      "group": "AI & Automation",
+      "name": "n8n Automation",
+      "level": 76
+    },
+    {
+      "group": "AI & Automation",
+      "name": "Prompt Engineering",
+      "level": 90
+    },
+    {
+      "group": "Tools & Design",
+      "name": "UI/UX Design",
+      "level": 80
+    },
+    {
+      "group": "Tools & Design",
+      "name": "Git & GitHub",
+      "level": 78
+    },
+    {
+      "group": "Tools & Design",
+      "name": "Vercel / Deploy",
+      "level": 85
+    }
+  ],
+  "projects": [
+    {
+      "title": "AI-Powered LMS",
+      "description": "Full learning management system with AI mentor, course enrollment, video access, student dashboards, and teacher admin panel. Built to scale.",
+      "tags": [
+        "Next.js",
+        "Supabase",
+        "Claude API",
+        "Clerk",
+        "Stripe",
+        "Vercel"
+      ],
+      "url": "https://github.com/Mojahid-dev",
+      "linkLabel": "View on GitHub"
+    },
+    {
+      "title": "Nexora Channel",
+      "description": "Faceless YouTube channel for Indian audiences — AI, tech, psychology & human behavior. Retention-engineered Hinglish scripts with full production bibles.",
+      "tags": [
+        "Content Strategy",
+        "AI Scripts",
+        "Hinglish",
+        "SEO",
+        "Automation"
+      ],
+      "url": "https://github.com/Mojahid-dev",
+      "linkLabel": "View Channel"
+    },
+    {
+      "title": "This Portfolio",
+      "description": "Bold black-orange portfolio site. Custom cursor, particle systems, scroll-reveal animations, glitch effects, and a character that makes recruiters stop scrolling.",
+      "tags": [
+        "HTML/CSS",
+        "Vanilla JS",
+        "Canvas API",
+        "Animations"
+      ],
+      "url": "https://github.com/Mojahid-dev",
+      "linkLabel": "Source Code"
+    }
+  ],
+  "process": [
+    {
+      "title": "Understand",
+      "description": "Deep dive into the problem. What are we actually building and why does it matter?"
+    },
+    {
+      "title": "Design",
+      "description": "Wireframe, prototype, think through UX. No code until the plan is solid."
+    },
+    {
+      "title": "Build",
+      "description": "Ship fast, iterate faster. Working software over perfect software — always."
+    },
+    {
+      "title": "Deploy",
+      "description": "Production-ready. Monitored. Live. Not just a localhost demo that never ships."
+    }
+  ],
+  "marquee": [
+    "REACT",
+    "NEXT.JS",
+    "SUPABASE",
+    "CLAUDE API",
+    "TAILWIND CSS",
+    "VERCEL",
+    "AI BUILDER",
+    "FULL STACK",
+    "N8N AUTOMATION"
+  ],
+  "stats": [
+    {
+      "value": "4",
+      "label": "Semesters CSE"
+    },
+    {
+      "value": "10",
+      "label": "Projects Built"
+    },
+    {
+      "value": "3",
+      "label": "Tech Stacks"
+    },
+    {
+      "value": "∞",
+      "label": "Curiosity"
+    }
+  ]
+}
