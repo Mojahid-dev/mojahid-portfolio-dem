@@ -17,6 +17,7 @@ export type PortfolioContent = {
     banner: string;
     tags: string[];
     url: string;
+    previewUrl: string;
     linkLabel: string;
   }[];
   process: { title: string; description: string }[];
@@ -73,13 +74,13 @@ export async function saveContent(value: unknown) {
     !Array.isArray(parsed.skills)
   )
     throw new Error("Content needs a name, projects list, and skills list.");
-  parsed.projects = parsed.projects.map((project) => ({ ...project, banner: project.banner || "" }));
+  parsed.projects = parsed.projects.map((project) => ({ ...project, banner: project.banner || "", previewUrl: project.previewUrl || "" }));
   const validWebUrl = (value: string, optional = false) => {
     if (optional && !value) return true;
     try { const url = new URL(value); return url.protocol === "https:" || url.protocol === "http:"; } catch { return false; }
   };
   if (typeof parsed.github !== "string" || !validWebUrl(parsed.github)) throw new Error("Enter a valid http or https profile URL.");
-  if (parsed.projects.some((project) => !project || typeof project.title !== "string" || typeof project.description !== "string" || !Array.isArray(project.tags) || typeof project.banner !== "string" || !validWebUrl(project.url, true) || (project.banner && !validWebUrl(project.banner)))) throw new Error("Check each project title, description, tech stack, banner, and link.");
+  if (parsed.projects.some((project) => !project || typeof project.title !== "string" || typeof project.description !== "string" || !Array.isArray(project.tags) || typeof project.banner !== "string" || !validWebUrl(project.url, true) || !validWebUrl(project.previewUrl, true) || (project.banner && !validWebUrl(project.banner)))) throw new Error("Check each project title, description, tech stack, banner, project link, and preview link.");
   if (parsed.skills.some((skill) => !skill || typeof skill.group !== "string" || typeof skill.name !== "string" || !Number.isInteger(skill.level) || skill.level < 0 || skill.level > 100)) throw new Error("Skill progress must be a whole number from 0 to 100.");
   const db = database();
   if (db) {

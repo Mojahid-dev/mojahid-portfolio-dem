@@ -1157,6 +1157,16 @@
             gap: 16px;
         }
 
+        .card-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 22px;
+        }
+
+        .card-link.preview-link {
+            color: var(--white);
+        }
+
         /* ── PROCESS ── */
         #process {
             padding: 120px 5%;
